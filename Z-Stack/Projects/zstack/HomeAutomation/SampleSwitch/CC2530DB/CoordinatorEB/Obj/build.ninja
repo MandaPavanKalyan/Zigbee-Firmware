@@ -1,0 +1,106 @@
+#Generating source browse information for project SampleSwitch
+
+
+#Abbreviations
+cc = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\SourceIndexer.exe
+ll = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\PbdLink.exe
+bd = C$:\Program$ Files$ (x86)\IAR$ Systems\Embedded$ Workbench$ 8.3\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build OSAL_SampleSw.pbi : index OSAL_SampleSw.xcl
+build zcl_samplesw.pbi : index zcl_samplesw.xcl
+build zcl_samplesw_data.pbi : index zcl_samplesw_data.xcl
+build hal_assert.pbi : index hal_assert.xcl
+build hal_drivers.pbi : index hal_drivers.xcl
+build hal_adc.pbi : index hal_adc.xcl
+build hal_dma.pbi : index hal_dma.xcl
+build hal_flash.pbi : index hal_flash.xcl
+build hal_key.pbi : index hal_key.xcl
+build hal_lcd.pbi : index hal_lcd.xcl
+build hal_led.pbi : index hal_led.xcl
+build hal_sleep.pbi : index hal_sleep.xcl
+build hal_startup.pbi : index hal_startup.xcl
+build hal_timer.pbi : index hal_timer.xcl
+build hal_uart.pbi : index hal_uart.xcl
+build mac_cfg.pbi : index mac_cfg.xcl
+build mac_pib.pbi : index mac_pib.xcl
+build mac_autopend.pbi : index mac_autopend.xcl
+build mac_backoff_timer.pbi : index mac_backoff_timer.xcl
+build mac_low_level.pbi : index mac_low_level.xcl
+build mac_radio.pbi : index mac_radio.xcl
+build mac_rx.pbi : index mac_rx.xcl
+build mac_rx_onoff.pbi : index mac_rx_onoff.xcl
+build mac_sleep.pbi : index mac_sleep.xcl
+build mac_tx.pbi : index mac_tx.xcl
+build mac_csp_tx.pbi : index mac_csp_tx.xcl
+build mac_mcu.pbi : index mac_mcu.xcl
+build mac_mem.pbi : index mac_mem.xcl
+build mac_radio_defs.pbi : index mac_radio_defs.xcl
+build mac_rffrontend.pbi : index mac_rffrontend.xcl
+build DebugTrace.pbi : index DebugTrace.xcl
+build MT.pbi : index MT.xcl
+build MT_AF.pbi : index MT_AF.xcl
+build MT_APP.pbi : index MT_APP.xcl
+build MT_DEBUG.pbi : index MT_DEBUG.xcl
+build MT_NWK.pbi : index MT_NWK.xcl
+build MT_SAPI.pbi : index MT_SAPI.xcl
+build MT_SYS.pbi : index MT_SYS.xcl
+build MT_TASK.pbi : index MT_TASK.xcl
+build MT_UART.pbi : index MT_UART.xcl
+build MT_UTIL.pbi : index MT_UTIL.xcl
+build MT_VERSION.pbi : index MT_VERSION.xcl
+build MT_ZDO.pbi : index MT_ZDO.xcl
+build BindingTable.pbi : index BindingTable.xcl
+build nwk_globals.pbi : index nwk_globals.xcl
+build stub_aps.pbi : index stub_aps.xcl
+build ZDiags.pbi : index ZDiags.xcl
+build ZGlobals.pbi : index ZGlobals.xcl
+build OSAL.pbi : index OSAL.xcl
+build OSAL_Clock.pbi : index OSAL_Clock.xcl
+build OSAL_Memory.pbi : index OSAL_Memory.xcl
+build OSAL_Nv.pbi : index OSAL_Nv.xcl
+build OSAL_PwrMgr.pbi : index OSAL_PwrMgr.xcl
+build OSAL_Timers.pbi : index OSAL_Timers.xcl
+build AF.pbi : index AF.xcl
+build zcl.pbi : index zcl.xcl
+build zcl_diagnostic.pbi : index zcl_diagnostic.xcl
+build zcl_ezmode.pbi : index zcl_ezmode.xcl
+build zcl_general.pbi : index zcl_general.xcl
+build zcl_ha.pbi : index zcl_ha.xcl
+build saddr.pbi : index saddr.xcl
+build ZDApp.pbi : index ZDApp.xcl
+build ZDConfig.pbi : index ZDConfig.xcl
+build ZDNwkMgr.pbi : index ZDNwkMgr.xcl
+build ZDObject.pbi : index ZDObject.xcl
+build ZDProfile.pbi : index ZDProfile.xcl
+build ZDSecMgr.pbi : index ZDSecMgr.xcl
+build zmac.pbi : index zmac.xcl
+build zmac_cb.pbi : index zmac_cb.xcl
+build OnBoard.pbi : index OnBoard.xcl
+build ZMain.pbi : index ZMain.xcl
+build SampleSwitch_part0.pbi : link OSAL_SampleSw.pbi zcl_samplesw.pbi zcl_samplesw_data.pbi hal_assert.pbi hal_drivers.pbi hal_adc.pbi hal_dma.pbi hal_flash.pbi
+build SampleSwitch_part1.pbi : link hal_key.pbi hal_lcd.pbi hal_led.pbi hal_sleep.pbi hal_startup.pbi hal_timer.pbi hal_uart.pbi mac_cfg.pbi
+build SampleSwitch_part2.pbi : link mac_pib.pbi mac_autopend.pbi mac_backoff_timer.pbi mac_low_level.pbi mac_radio.pbi mac_rx.pbi mac_rx_onoff.pbi mac_sleep.pbi
+build SampleSwitch_part3.pbi : link mac_tx.pbi mac_csp_tx.pbi mac_mcu.pbi mac_mem.pbi mac_radio_defs.pbi mac_rffrontend.pbi DebugTrace.pbi MT.pbi
+build SampleSwitch_part4.pbi : link MT_AF.pbi MT_APP.pbi MT_DEBUG.pbi MT_NWK.pbi MT_SAPI.pbi MT_SYS.pbi MT_TASK.pbi MT_UART.pbi
+build SampleSwitch_part5.pbi : link MT_UTIL.pbi MT_VERSION.pbi MT_ZDO.pbi BindingTable.pbi nwk_globals.pbi stub_aps.pbi ZDiags.pbi ZGlobals.pbi
+build SampleSwitch_part6.pbi : link OSAL.pbi OSAL_Clock.pbi OSAL_Memory.pbi OSAL_Nv.pbi OSAL_PwrMgr.pbi OSAL_Timers.pbi AF.pbi zcl.pbi
+build SampleSwitch_part7.pbi : link zcl_diagnostic.pbi zcl_ezmode.pbi zcl_general.pbi zcl_ha.pbi saddr.pbi ZDApp.pbi ZDConfig.pbi ZDNwkMgr.pbi
+build SampleSwitch_part8.pbi : link ZDObject.pbi ZDProfile.pbi ZDSecMgr.pbi zmac.pbi zmac_cb.pbi OnBoard.pbi ZMain.pbi
+build SampleSwitch.pbd : link SampleSwitch_part0.pbi SampleSwitch_part1.pbi SampleSwitch_part2.pbi SampleSwitch_part3.pbi SampleSwitch_part4.pbi SampleSwitch_part5.pbi SampleSwitch_part6.pbi SampleSwitch_part7.pbi SampleSwitch_part8.pbi
+build SampleSwitch.pbw : browsedata SampleSwitch.pbd
+
+

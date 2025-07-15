@@ -1,0 +1,459 @@
+###############################################################################
+#
+# IAR C/C++ Compiler V10.40.1.7397 for 8051               12/Jul/2025  08:48:54
+# Copyright 2004-2021 IAR Systems AB.
+# PC-locked license - IAR Embedded Workbench for 8051
+#
+#    Core               =  plain
+#    Code model         =  banked
+#    Data model         =  large
+#    Calling convention =  xdata reentrant
+#    Constant location  =  data_rom
+#    Dptr setup         =  1,16
+#                          
+#    Source file        =  
+#        C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Components\hal\target\CC2530EB\hal_key.c
+#    Command line       =  
+#        -f C:\Users\91939\AppData\Local\Temp\EW1778.tmp
+#        ("C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Components\hal\target\CC2530EB\hal_key.c" -D SECURE=1 -D
+#        TC_LINKKEY_JOIN -D NV_INIT -D xNV_RESTORE -D xHOLD_AUTO_START -D
+#        ZTOOL_P1 -D MT_TASK -D MT_APP_FUNC -D MT_SYS_FUNC -D MT_ZDO_FUNC -D
+#        LCD_SUPPORTED=DEBUG -D MULTICAST_ENABLED=FALSE -D ZCL_READ -D
+#        ZCL_WRITE -D ZCL_REPORT -D ZCL_EZMODE -D ZCL_BASIC -D ZCL_IDENTIFY -D
+#        ZCL_ON_OFF -D ZCL_DIAGNOSTIC -D FEATURE_SYSTEM_STATS -D HAL_UART=TRUE
+#        -lC "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\CoordinatorEB\List"
+#        -lA "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\CoordinatorEB\List"
+#        --diag_suppress Pe001,Pa010 -o "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\CoordinatorEB\Obj"
+#        -e --debug --core=plain --dptr=16,1 --data_model=large
+#        --code_model=banked --calling_convention=xdata_reentrant
+#        --place_constants=data_rom --nr_virtual_regs 16 -f
+#        "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\Tools\CC2530DB\f8wCoord.cfg"
+#        (-DCPU32MHZ -DROOT=__near_func -DMAC_CFG_APP_PENDING_QUEUE=TRUE
+#        -DMAC_CFG_TX_DATA_MAX=5 -DMAC_CFG_TX_MAX=8 -DMAC_CFG_RX_MAX=5
+#        -DZDO_COORDINATOR -DRTR_NWK) -f "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\Tools\CC2530DB\f8wConfig.cfg"
+#        (-DZIGBEEPRO -DSECURE=1 -DZG_SECURE_DYNAMIC=0 -DREFLECTOR
+#        -DDEFAULT_CHANLIST=0x00000800 -DZDAPP_CONFIG_PAN_ID=0xFFFF
+#        -DNWK_START_DELAY=100 -DEXTENDED_JOINING_RANDOM_MASK=0x007F
+#        -DBEACON_REQUEST_DELAY=100 -DBEACON_REQ_DELAY_MASK=0x00FF
+#        -DLINK_STATUS_JITTER_MASK=0x007F -DROUTE_EXPIRY_TIME=30
+#        -DAPSC_ACK_WAIT_DURATION_POLLED=3000 -DNWK_INDIRECT_MSG_TIMEOUT=7
+#        -DMAX_RREQ_ENTRIES=8 -DAPSC_MAX_FRAME_RETRIES=3
+#        -DNWK_MAX_DATA_RETRIES=2 -DMAX_POLL_FAILURE_RETRIES=2 -DMAX_BCAST=9
+#        -DAPS_MAX_GROUPS=16 -DMAX_RTG_ENTRIES=40 -DNWK_MAX_BINDING_ENTRIES=4
+#        -DMAX_BINDING_CLUSTER_IDS=4 "-DDEFAULT_KEY={0x01, 0x03, 0x05, 0x07,
+#        0x09, 0x0B, 0x0D, 0x0F, 0x00, 0x02, 0x04, 0x06, 0x08, 0x0A, 0x0C,
+#        0x0D}" -DMAC_MAX_FRAME_SIZE=116 -DZDNWKMGR_MIN_TRANSMISSIONS=20
+#        "-DCONST=const __code" -DGENERIC=__generic -DRFD_RCVC_ALWAYS_ON=FALSE
+#        -DPOLL_RATE=1000 -DQUEUED_POLL_RATE=100 -DRESPONSE_POLL_RATE=100
+#        -DREJOIN_POLL_RATE=440 -DREJOIN_BACKOFF=900000 -DREJOIN_SCAN=900000
+#        -DXOSC_FREQ=32000000) -f "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\Tools\CC2530DB\f8wZCL.cfg"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\" -I
+#        "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\Source\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\Source\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\ZMain\TI2530DB\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\hal\include\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\mac\include\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\mac\high_level\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\single_chip\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\mt\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\osal\include\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\services\saddr\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\services\sdata\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\stack\af\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\stack\nwk\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\stack\sapi\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\stack\sec\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\stack\sys\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\stack\zcl\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\stack\zdo\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\zmac\"
+#        -I "C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\zmac\f8w\"
+#        -Ohz --require_prototypes)
+#    Locale             =  English_USA.1252
+#    List file          =  
+#        C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\CoordinatorEB\List\hal_key.lst
+#    Object file        =  
+#        C:\Users\91939\Downloads\Z-Stack
+#        1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\CoordinatorEB\Obj\hal_key.r51
+#
+###############################################################################
+
+C:\Users\91939\Downloads\Z-Stack 1.0\Z-Stack\Components\hal\target\CC2530EB\hal_key.c
+      1          /**************************************************************************************************
+      2            Filename:       hal_key.c
+      3            Description:    This file contains the interface to the HAL KEY Service.
+      4                            Simplified for a single button on P0.1 for the E18-MS1-PCB.
+      5          **************************************************************************************************/
+      6          
+      7          #include "hal_mcu.h"
+
+   \                                 In  segment SFR_AN, at 0x80
+   \   union <unnamed> volatile __sfr _A_P0
+   \                     _A_P0:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0x8f
+   \   unsigned char volatile __sfr P0INP
+   \                     P0INP:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0xf3
+   \   unsigned char volatile __sfr P0SEL
+   \                     P0SEL:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0xf7
+   \   unsigned char volatile __sfr P2INP
+   \                     P2INP:
+   \   000000                DS 1
+
+   \                                 In  segment SFR_AN, at 0xfd
+   \   unsigned char volatile __sfr P0DIR
+   \                     P0DIR:
+   \   000000                DS 1
+      8          #include "hal_defs.h"
+      9          #include "hal_types.h"
+     10          #include "hal_board_cfg.h" // Contains our custom pin configuration
+     11          #include "hal_drivers.h"
+     12          #include "hal_key.h"
+     13          #include "osal.h"
+     14          
+     15          #if (defined HAL_KEY) && (HAL_KEY == TRUE)
+     16          
+     17          /**************************************************************************************************
+     18           * CONSTANTS
+     19           */
+     20          #define HAL_KEY_DEBOUNCE_VALUE  25 // Debounce time in milliseconds
+     21          
+     22          /**************************************************************************************************
+     23           * TYPEDEFS
+     24           */
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     25          static halKeyCBack_t pHalKeyProcessFunction;
+   \                     pHalKeyProcessFunction:
+   \   000000                DS 2
+   \   000002                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     26          static uint8 HalKeyConfigured;
+   \                     HalKeyConfigured:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     27          static uint8 halKeySavedKeys = 0; // Stores the previous key state for polling
+   \                     halKeySavedKeys:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+     28          
+     29          /**************************************************************************************************
+     30           * GLOBAL VARIABLES
+     31           */
+     32          // FIX: Added this global variable back to resolve a linker error.
+     33          // The hal_drivers.c file requires this variable to be externally available.
+
+   \                                 In  segment XDATA_Z, align 1, keep-with-next
+     34          bool Hal_KeyIntEnable;
+   \                     Hal_KeyIntEnable:
+   \   000000                DS 1
+   \   000001                REQUIRE __INIT_XDATA_Z
+     35          
+     36          /**************************************************************************************************
+     37           * @fn      HalKeyInit
+     38           *
+     39           * @brief   Initialize Key Service.
+     40           */
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     41          void HalKeyInit( void )
+   \                     HalKeyInit:
+     42          {
+   \   000000   C082         PUSH      DPL
+   \   000002   C083         PUSH      DPH
+   \   000004                ; Saved register size: 2
+   \   000004                ; Auto size: 0
+     43            // Configure P0.1 as a GPIO input pin
+     44            P0SEL &= ~PUSH1_BV;
+   \   000004   53F3FD       ANL       0xf3,#0xfd
+     45            P0DIR &= ~PUSH1_BV;
+   \   000007   53FDFD       ANL       0xfd,#0xfd
+     46            
+     47            // Enable the internal pull-down resistor on P0.1
+     48            // This is the correct method for the CC2530
+     49            P2INP &= ~BV(6);    // Set Port 0 input mode to pull-up/pull-down
+   \   00000A   53F7BF       ANL       0xf7,#0xbf
+     50            P0INP &= ~PUSH1_BV; // Set P0.1 to have its pull resistor enabled (default is pull-down)
+   \   00000D   538FFD       ANL       0x8f,#0xfd
+     51            
+     52            halKeySavedKeys = 0;
+   \   000010   90....       MOV       DPTR,#halKeySavedKeys
+   \   000013   E4           CLR       A
+   \   000014   F0           MOVX      @DPTR,A
+     53            pHalKeyProcessFunction = NULL;
+   \   000015   90....       MOV       DPTR,#pHalKeyProcessFunction
+   \   000018   F0           MOVX      @DPTR,A
+   \   000019   A3           INC       DPTR
+   \   00001A   F0           MOVX      @DPTR,A
+     54            HalKeyConfigured = FALSE;
+   \   00001B   90....       MOV       DPTR,#HalKeyConfigured
+   \   00001E   F0           MOVX      @DPTR,A
+     55            
+     56            // Since this driver is polling-only, ensure the interrupt flag is always false.
+     57            Hal_KeyIntEnable = FALSE;
+   \   00001F   90....       MOV       DPTR,#Hal_KeyIntEnable
+   \   000022                REQUIRE ?Subroutine0
+   \   000022                REQUIRE P0SEL
+   \   000022                REQUIRE P0DIR
+   \   000022                REQUIRE P2INP
+   \   000022                REQUIRE P0INP
+   \   000022                ; // Fall through to label ?Subroutine0
+     58          }
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ?Subroutine0:
+   \   000000   F0           MOVX      @DPTR,A
+   \   000001                REQUIRE ??Subroutine1_0
+   \   000001                ; // Fall through to label ??Subroutine1_0
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+   \                     ??Subroutine1_0:
+   \   000000   D083         POP       DPH
+   \   000002   D082         POP       DPL
+   \   000004   02....       LJMP      ?BRET
+     59          
+     60          /**************************************************************************************************
+     61           * @fn      HalKeyConfig
+     62           *
+     63           * @brief   Configure the Key service. Polling is used for this simple driver.
+     64           */
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     65          void HalKeyConfig(bool interruptEnable, halKeyCBack_t cback)
+   \                     HalKeyConfig:
+     66          {
+   \   000000   C082         PUSH      DPL
+   \   000002   C083         PUSH      DPH
+   \   000004                ; Saved register size: 2
+   \   000004                ; Auto size: 0
+     67            (void)interruptEnable; // This simplified driver uses polling, so interrupts are ignored.
+     68            
+     69            // Register the application's callback function
+     70            pHalKeyProcessFunction = cback;
+   \   000004   90....       MOV       DPTR,#pHalKeyProcessFunction
+   \   000007   EA           MOV       A,R2
+   \   000008   F0           MOVX      @DPTR,A
+   \   000009   A3           INC       DPTR
+   \   00000A   EB           MOV       A,R3
+   \   00000B   F0           MOVX      @DPTR,A
+     71          
+     72            // Start the polling timer if it's not already running
+     73            if (HalKeyConfigured == FALSE)
+   \   00000C   90....       MOV       DPTR,#HalKeyConfigured
+   \   00000F   E0           MOVX      A,@DPTR
+   \   000010   700C         JNZ       ??HalKeyConfig_0
+     74            {
+     75              osal_set_event(Hal_TaskID, HAL_KEY_EVENT);
+   \   000012                ; Setup parameters for call to function osal_set_event
+   \   000012   7A10         MOV       R2,#0x10
+   \   000014   7B00         MOV       R3,#0x0
+   \   000016   90....       MOV       DPTR,#Hal_TaskID
+   \   000019   E0           MOVX      A,@DPTR
+   \   00001A   F9           MOV       R1,A
+   \   00001B   12....       LCALL     `??osal_set_event::?relay`; Banked call to: osal_set_event
+     76            }
+     77            
+     78            HalKeyConfigured = TRUE;
+   \                     ??HalKeyConfig_0:
+   \   00001E   90....       MOV       DPTR,#HalKeyConfigured
+   \   000021   7401         MOV       A,#0x1
+   \   000023   80..         SJMP      ?Subroutine0
+     79          }
+     80          
+     81          /**************************************************************************************************
+     82           * @fn      HalKeyRead
+     83           *
+     84           * @brief   Read the current value of the key(s).
+     85           *
+     86           * @return  keys - bit mask of all currently pressed keys
+     87           */
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+     88          uint8 HalKeyRead( void )
+   \                     HalKeyRead:
+     89          {
+   \   000000                ; Saved register size: 0
+   \   000000                ; Auto size: 0
+     90            uint8 keys = 0;
+   \   000000   7900         MOV       R1,#0x0
+     91          
+     92            // HAL_PUSH_BUTTON1() is defined in hal_board_cfg.h and points to P0.1
+     93            if (HAL_PUSH_BUTTON1())
+   \   000002   A281         MOV       C,0x80.1
+   \   000004   5002         JNC       ??HalKeyRead_0
+     94            {
+     95              // If the button is pressed, report it as HAL_KEY_SW_1.
+     96              // This now matches the key code expected by the application.
+     97              keys |= HAL_KEY_SW_1;
+   \   000006   7901         MOV       R1,#0x1
+     98            }
+     99          
+    100            return keys;
+   \                     ??HalKeyRead_0:
+   \   000008   02....       LJMP      ?BRET
+   \   00000B                REQUIRE _A_P0
+    101          }
+    102          
+    103          /**************************************************************************************************
+    104           * @fn      HalKeyPoll
+    105           *
+    106           * @brief   Called by the HAL task to poll the keys. This function is called
+    107           * periodically by the OSAL timer.
+    108           */
+
+   \                                 In  segment BANKED_CODE, align 1, keep-with-next
+    109          void HalKeyPoll(void)
+   \                     HalKeyPoll:
+    110          {
+   \   000000   C082         PUSH      DPL
+   \   000002   C083         PUSH      DPH
+   \   000004                ; Saved register size: 2
+   \   000004                ; Auto size: 0
+    111            uint8 currentKeys = HalKeyRead();
+   \   000004                ; Setup parameters for call to function HalKeyRead
+   \   000004   12....       LCALL     `??HalKeyRead::?relay`; Banked call to: HalKeyRead
+   \   000007   E9           MOV       A,R1
+   \   000008   F9           MOV       R1,A
+    112          
+    113            // If the key state has changed since the last poll...
+    114            if (currentKeys != halKeySavedKeys)
+   \   000009   90....       MOV       DPTR,#halKeySavedKeys
+   \   00000C   E0           MOVX      A,@DPTR
+   \   00000D   69           XRL       A,R1
+   \   00000E   601E         JZ        ??HalKeyPoll_0
+    115            {
+    116              halKeySavedKeys = currentKeys; // ...save the new state...
+   \   000010   E9           MOV       A,R1
+   \   000011   F0           MOVX      @DPTR,A
+    117              
+    118              // ...and notify the application by calling its registered callback function.
+    119              if (pHalKeyProcessFunction)
+   \   000012   90....       MOV       DPTR,#pHalKeyProcessFunction
+   \   000015   E0           MOVX      A,@DPTR
+   \   000016   FA           MOV       R2,A
+   \   000017   A3           INC       DPTR
+   \   000018   E0           MOVX      A,@DPTR
+   \   000019   FB           MOV       R3,A
+   \   00001A   EA           MOV       A,R2
+   \   00001B   4B           ORL       A,R3
+   \   00001C   6010         JZ        ??HalKeyPoll_0
+    120              {
+    121                (pHalKeyProcessFunction)(currentKeys, HAL_KEY_STATE_NORMAL);
+   \   00001E                ; Setup parameters for indirect call
+   \   00001E   7A00         MOV       R2,#0x0
+   \   000020   90....       MOV       DPTR,#pHalKeyProcessFunction
+   \   000023   E0           MOVX      A,@DPTR
+   \   000024   F8           MOV       R0,A
+   \   000025   A3           INC       DPTR
+   \   000026   E0           MOVX      A,@DPTR
+   \   000027   F583         MOV       DPH,A
+   \   000029   8882         MOV       DPL,R0
+   \   00002B   12....       LCALL     ?CALL_IND
+    122              }
+    123            }
+    124          }
+   \                     ??HalKeyPoll_0:
+   \   00002E   80..         SJMP      ??Subroutine1_0
+    125          
+    126          // All other functions from the original TI file (interrupts, sleep, joystick) are
+    127          // removed as they are not needed for this hardware configuration.
+    128          
+    129          #else // This is for builds where HAL_KEY is FALSE
+    130          
+    131          void HalKeyInit(void) {}
+    132          void HalKeyConfig(bool interruptEnable, halKeyCBack_t cback) {}
+    133          uint8 HalKeyRead(void) { return 0; }
+    134          void HalKeyPoll(void) {}
+    135          
+    136          #endif // HAL_KEY
+
+   Maximum stack usage in bytes:
+
+   ISTACK Function
+   ------ --------
+      2   HalKeyConfig
+        2   -> osal_set_event
+      2   HalKeyInit
+      2   HalKeyPoll
+        2   -> HalKeyRead
+      0   HalKeyRead
+
+
+   Segment part sizes:
+
+   Bytes  Function/Label
+   -----  --------------
+       7  ??Subroutine1_0
+       1  ?Subroutine0
+      37  HalKeyConfig
+       1  HalKeyConfigured
+      34  HalKeyInit
+      48  HalKeyPoll
+      11  HalKeyRead
+       1  Hal_KeyIntEnable
+       1  P0DIR
+       1  P0INP
+       1  P0SEL
+       1  P2INP
+       1  _A_P0
+       1  halKeySavedKeys
+       2  pHalKeyProcessFunction
+      24  -- Other
+
+ 
+ 138 bytes in segment BANKED_CODE
+  24 bytes in segment BANK_RELAYS
+   5 bytes in segment SFR_AN
+   5 bytes in segment XDATA_Z
+ 
+  24 bytes of CODE     memory
+   0 bytes of DATA     memory (+ 5 bytes shared)
+ 138 bytes of HUGECODE memory
+   5 bytes of XDATA    memory
+
+Errors: none
+Warnings: none

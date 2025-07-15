@@ -1,0 +1,8 @@
+mac_cfg.pbi: \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Components\mac\high_level\mac_cfg.c \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\mac\include\mac_api.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\hal_types.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\services\saddr\saddr.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\services\sdata\sdata.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Components\mac\high_level/mac_security_pib.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Components\mac\high_level/mac_high_level.h

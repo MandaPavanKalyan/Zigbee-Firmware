@@ -1,0 +1,8 @@
+MT_VERSION.pbi: \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Components\mt\MT_VERSION.c \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\osal\include\ZComDef.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\osal\include/comdef.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\hal_types.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\hal\include\hal_defs.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\services\saddr\saddr.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Components\mt/MT_VERSION.h

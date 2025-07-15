@@ -1,0 +1,17 @@
+hal_assert.pbi: \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Components\hal\common\hal_assert.c \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\hal\include\hal_assert.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\hal_types.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\hal\include\hal_board.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\hal_board_cfg.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB/hal_mcu.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\hal\include\hal_defs.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB/hal_types.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\ioCC2530.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\hal_mcu.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\mac_rx.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\mac\high_level\mac_high_level.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\mac\include\mac_api.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\services\saddr\saddr.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\services\sdata\sdata.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\mac\low_level\srf04\mac_tx.h

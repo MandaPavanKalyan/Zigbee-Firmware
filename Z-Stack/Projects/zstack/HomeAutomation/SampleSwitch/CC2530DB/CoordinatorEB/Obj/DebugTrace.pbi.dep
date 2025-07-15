@@ -1,0 +1,17 @@
+DebugTrace.pbi: \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Components\mt\DebugTrace.c \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\osal\include\ZComDef.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\osal\include/comdef.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\hal\target\CC2530EB\hal_types.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\hal\include\hal_defs.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\services\saddr\saddr.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\osal\include\OSAL.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\clib\limits.h \
+  C:\Program\ Files\ (x86)\IAR\ Systems\Embedded\ Workbench\ 8.3\8051\inc\clib/sysmac.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\osal\include/OSAL_Memory.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Projects\zstack\HomeAutomation\SampleSwitch\CC2530DB\..\..\..\..\..\Components\osal\include/OSAL_Timers.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Components\mt/MT.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Components\mt/MT_RPC.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Components\mt/MT_TASK.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Components\mt/MT_DEBUG.h \
+  C:\Users\91939\Downloads\Z-Stack\ 1.0\Z-Stack\Components\mt/DebugTrace.h
